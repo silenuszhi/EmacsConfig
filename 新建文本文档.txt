@@ -1,0 +1,18 @@
+emacs安装说明
+1.下载新版emacs解压到任意位置
+
+2.C:\Users\silenuszhi\AppData\Roaming\.emacs.d中创建init.el文件，内容如下
+	;; This file is only for windows 7/8/8.1
+	;; The only thing it does is to set the HOME directories for emacs,
+	;; then trigger the init.el in the directory specified by HOME to
+	;; accomplish the true initialization
+	;; You should put this file in the **default** HOME directory right after
+	;; emacs is installed
+	(setenv "HOME" "D:/Google Drive/emacsconfig") ;; you can change this dir to the place you like
+	(load "~/.emacs.d/init.el")
+
+3.创建环境变量
+EMACS_SERVER_FILE
+D:\Google Drive\emacsconfig\.emacs.d\server\server
+
+4.enjoy emacs!
